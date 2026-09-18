@@ -1861,7 +1861,7 @@ int do_execve(struct filename *filename,
 #else
 	return do_execveat_common(AT_FDCWD, filename, argv, envp, 0);
 #endif
-}}
+}
 
 int do_execveat(int fd, struct filename *filename,
 		const char __user *const __user *__argv,
