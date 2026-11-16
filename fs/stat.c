@@ -23,10 +23,6 @@
 #include <asm/uaccess.h>
 #include <asm/unistd.h>
 #ifdef CONFIG_KSU_SUSFS
-#include <linux/susfs_def.h>
-#include "mount.h"
-#endif
-#ifdef CONFIG_KSU_SUSFS
 extern struct static_key_true ksu_is_init_rc_hook_enabled;
 extern void ksu_handle_vfs_fstat(int fd, loff_t *kstat_size_ptr);
 extern struct static_key_true ksu_su_compat_enabled;
